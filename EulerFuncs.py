@@ -10,6 +10,8 @@ import timeit
 def primes_under(end):  
     """
     Returns all check_prime under inputted value.
+    This was copy-paste code. This is kept in here so some of my really old
+    solutions that use this function will still work.
     """
     
     if end < 2: return []
@@ -29,8 +31,9 @@ def primes_under(end):
 
 def primes_below(limit):
     """
-    Returns a list of prime numbers less than n
-    limit"""
+    Returns a list of prime numbers less than n limit.
+    This is the prime function that is written by me.
+    """
     if limit < 2: return []
     
     # Marks an index as a prime (True) or non-prime (False)
