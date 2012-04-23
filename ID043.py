@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# date: Apr 22, 2012
 
 import EulerFuncs
 import itertools
