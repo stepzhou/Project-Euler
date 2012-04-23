@@ -3,7 +3,7 @@
 import EulerFuncs
 import itertools
 
-# laughably brute-force but quick solution
+# laughably brute-force but easy solution
 def check_div(n):
     three_dig = 1000
     d8d9d10 = n % three_dig
