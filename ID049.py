@@ -2,15 +2,12 @@
 # date: Apr 23, 2012
 
 import EulerFuncs
+import itertools
 
 def str_permute(s):
-    perms = []
-    if len(s) == 1:
-        perms = [s]
-    else:
-        for i, c in enumerate(s):
-            for perm in str_permute(s[:i] + s[i+1:]):
-                perms += [c + perm]
+    perms = list(itertools.permutations(s))
+    for i in xrange(len(perms)):
+        perms[i] = "".join(str(i) for i in perms[i])
     return perms
 
 # find primes 1000 <= primes < 10000
