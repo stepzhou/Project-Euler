@@ -22,7 +22,9 @@ for i in xrange(len(primes)):
         prime2 = primes[j]
         diff = prime2 - prime1
         prime3 = prime2 + diff
+        # check if prime3 is prime
         if prime3 in primes_set:
             prime1_perm = str_permute(str(prime1))
+            # check if the three numbers are permutations of one another
             if str(prime2) in prime1_perm and str(prime3) in prime1_perm:
                 print prime1, prime2, prime3
