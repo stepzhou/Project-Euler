@@ -13,6 +13,7 @@ def match(n):
 
 n = 1020304050607080900
 s = str(n)
+s[0] = 'd'
 i = len(s)-2
 while i >= 0:
     j = int(s[i]) + 1
